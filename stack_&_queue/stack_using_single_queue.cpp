@@ -8,10 +8,11 @@ public:
     void push(int val) {
         // q2.push(val);// it uses double queuu
 
-        int size=q2.size();
-        q2.push(val);
+        int n=q1.size();
+        q1.push(val);
         for(int i=0;i<n;i++){
-             
+            q1.push(q1.front());
+            q1.pop(); 
         }
 
         // while (!q1.empty()) {
@@ -54,7 +55,7 @@ int main() {
     st.push(60);
     st.push(23);
 
-    while (!st.isEmpty()) { // Corrected method call to isEmpty()
+    while (!st.isEmpty()) { 
         cout << st.top() << " \n";
         st.pop();
     }
