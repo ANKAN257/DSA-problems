@@ -54,7 +54,7 @@ int main() {
     st.push(60);
     st.push(23);
 
-    while (!st.isEmpty()) { // Corrected method call to isEmpty()
+    while (!st.isEmpty()) { 
         cout << st.top() << " \n";
         st.pop();
     }
