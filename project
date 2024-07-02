@@ -1,0 +1,259 @@
+Name-Codeforces -online coding platform,
+
+Description -: 
+
+tech stack that i used:- React js ,Node js,tailwind for css
+
+
+
+
+
+
+
+
+1.> Why react Not other framwork
+
+Ans. ---React is  js library  ,used for building UI ,
+     ---Single page Application ,there is no reloading page option 
+     ---use viryual dom to enhance performance 
+     ---update virtual dom and comapre to previous dom ,And then update the actual dom
+     ---uniDirectional Data flow 
+     ---Declarative Approach 
+     ---flexible to use other libraries for state management 
+
+     what is DOM:- programming Interface foe web documents 
+                   it represents the structure of document(like HTMl or Xml) as tree object 
+                   where each Node correcpond to part of document
+
+                   Node-: 
+                      Element Node->represent tags,
+                      Attribute Node->represent HTML Element(Id,Class),
+                      Text Node->represent text content inside HTML elements,
+                      Document Node->represent entire document
+
+
+    Component-Based Architecht-
+    1>Modularity -: it allows to use reusable UI Component
+    2>Reusable-: Developer can reuse Component across different application Component
+
+    Virtual DOM:
+    1>Performance-: react uses a virtual DOM to efficiently update and render only that Component change
+                    rather than re-rendering the entire page
+    
+
+    compare to other framworks
+       1>Angular-: Learning curve is complex as compare to react
+       2>Vue.js-: similar to react,but not have large ecosystem  or community as react have 
+
+2.> why Node js 
+Ans. --open source,cross-platform js runtime environment that allows developer to run js on server side 
+     --it built on V8 js engine ,that engine is used by google chrome also 
+     --it uses event-driven ,non-blocking (asyn) I/O model 
+     --which make it efficient and suitable for real time applications
+
+     Key feature-:
+           ---single threaded with event loop-: use callback to handle multiple operations concurrently 
+           ---fast excution becouse of v8 engine ,v8 engine compile js code into machine code ,And it result high performance
+           ---vast node package mangers are avialable
+           ---scalablity- its architecture allow to handle large no of coonection concurrently with low latency 
+
+     why node -:
+            Node.js: Non-blocking, event-driven model leads to high performance and scalability
+            PHP/Ruby on Rails: Typically blocking, multi-threaded model. May face performance bottlenecks under high load.
+           
+
+
+
+----------------------------JWT --------------------------
+---JSON web Token ;_ it a method used for securing transmitting  info bt two parties as a json object 
+---this is highly used for authentication and authorization
+
+JWT authentication:- it used jwt token to identify the user and secur the communication bt client and server
+                   - these token are signed by the cryptography  algo to secure their integrity and authenthicity
+
+How it works:-
+             --Client send login req to the server with the credentials (username and password)
+             --Server varify the credentials ,If valid ,the server generates jwt token and token is signed by secret key
+             --Server send the token to the client
+             --Client store the token in cookies or local storage
+             --For subsequent requests to protected endPoints ,Client include jwt token into auth header 
+             --finally ,server varify the jwt token ,if valid then server process the req 
+            
+
+Structure of JWT:- It consists Three parts,separated by .
+                1>Header :-contain meta data about the token  incudling the type of token and signing algo used 
+                2>Payload :-actual data 
+                3>Signature:-used to varify the auth token and ensure that  payload can not be tempered 
+
+Advantage of JWT :-
+                --Statelessness
+                --Security
+                --Efficiecy
+
+
+
+
+-------------------------operating system---------------------   
+  os is software that manage the hardwae and software resourses 
+1>Type of os:
+
+2>process
+  program:- set of instrucion and stored in file (ssd,hdd) 
+         -- after loading into main memory ,program become process and it excuted by cpu
+         -- program.exe file
+
+  process:- program is in excution and loaded into main memroy 
+     compoents-code,data,stack,heap,Register,PC
+
+  process State:-precess goes through several state 
+       --New:-process is created
+       --Ready:-process is waiting to be assign to a processor
+       --Running:- Instruction are being executed
+       --Waiting:-waiting for some event
+       --Termination:-last state of process is goint to finish
+
+3>DeadLock:-situation where processes can not proceed to excute becuse each process is waiting for other resources
+
+  When Deadlock Occurs:-
+            1>Mutual Exclusion:-one resource must be in a non shareable mode
+            2>Hold and Wait:- A process holding at least one resource is waiting to acquire additional resources held by other processes.
+            3>No Preemption:-process can not take any resources of other processe if its task is not completed
+            4>Circular Wait:-
+
+  Conditions of Deadlock:-
+            1>Mutual Exclusion
+            2>Hold and Wait:
+            3>No Preemption:
+            4>Circular Wait:
+
+  Strategies to Handle Deadlock :- 
+          1>Deadlock Prevention:-
+              --Ensure at least one of the necessary conditions for deadlock cannot hold
+          2>Deadlock Avoidance: 
+              --Ensure the system will never enter an unsafe state.
+                  --Bankers Algo
+          3>Deadlock Detection:
+              --Allow the system to enter a deadlock state, detect it, and recover 
+          4>Deadlock Ignorance:-
+              --Ignore the problem altogether                   
+
+4>semaphore and mutex:-synchronization tools used in concurrent programming to manage access to shared resouces and prevent race conditon
+                      --both ensure that only one thread or process access the critical section at time
+          Mutexes:-Used specifically for mutual exclusion, ensuring that only one thread accesses a critical section at a time
+          Semaphore:-used for signaling between threads and managing multiple resources.
+
+
+
+
+5>Type of scheduling algorithm  
+  1>fcfs:-first come fist serve 
+       --onvoy effect is possible
+
+  2>Round Robin:
+           --each process  assign time quantum and after expiration of time quantum it goes to ready queue
+           -- time sharing
+           --Suitable for interactive systems where response time is crucial.
+           --Can lead to high context-switching overhead if the quantum is too small.
+
+  3>SJF:shortes burst time excuted first (cna be preemtive or non premtive)
+      --minimise the avg wt time
+      --starvation is possible
+
+
+
+------------------------------DataBase management system------------------------
+
+Normalization:-reduce data redundancy and improve data integrity.
+Need of Normalization:-
+               ---Minimize Data Redundancy:-Eliminates duplicate data, which saves storage and improves database performance
+               ---Ensure Data Integrity:-Ensures that the data stored in the database is accurate and consistent.
+               ---Reduce Anomalies:-Minimizes update, insert, and delete anomalies which can corrupt the data.
+Type of normalization:-
+   1>1NF:-
+         ---All the columns contain atomic (indivisible) value
+         ---Each column contains values of a single type
+         ---Each column contains unique values (no repeating groups or arrays)
+    2>2NF:-
+         ---Should be in 1NF
+         ---All non-key attributes are fully functionally dependent on the primary key.
+    3>3NF:-
+         ---should be in 2NF
+         ---All the attributes are functionally dependent only on the primary key (no transitive dependencies).
+    4>Boyce-Codd Normal Form (BCNF):-
+        ---should be in 3NF
+        ---or every non-trivial functional dependency, A->B,A should be a super key
+    5>4NF:-
+        ---should be in BCNF
+        ---no multivalue
+    6>5NF:-
+        ---should be in 4NF
+        ---No furthure decomposion
+                
+           
+
+ACID Properties:-
+  1>Atomicity:-All operations within a transaction are completed successfully
+
+  2>consistency:- database must remain consistent before and after the transaction.
+               ---maintaining all predefined rules and constraints.
+
+  3>Isolation:-transaction should be isolated from one another 
+              ---if from the two account ,money transaction is happening,then it should be in isolation 
+
+  4>Durability:-changes should be recored or strored in database
+
+
+Keys:-to identify each record in table and that help in integrity and efficiency of data retrieval operations 
+type of keys:-
+  1>Pk:-combination attributes or single attribute that help in identification of record in a table
+      --- it cannot contain NULL values
+      ---each table has only one PK
+  2>CK:-It is similar to PK ,but can have  multiple CKs ,one of them can be PK   
+  3>SK:-set of one or more attributes that help in identification of record in table 
+      ---superSet of CK
+      ---Can contain extra attributes that are not necessary for uniqueness.
+  4>FK:- uniquely identifies a row of another table
+      ---It establishes a link between the data in the two tables.
+      ---Can contain null values (if not constrained by NOT NULL).
+  5>Composite Key:-Composite key is a primary key composed of two or more columns used together to uniquely identify a record. 
+  6>Alternate Key:- An alternate key is any candidate key that is not chosen as the primary key
+       ---It is still a unique identifier for records in the table.
+       ---No null values.
+       ---Can be multiple alternate keys in a table.   
+  7>Unique Key: Ensures all values in a column are unique, allows one null value
+
+Joins:-combine rows from two or more tables based on related cols bt them   
+ from table_A  join  table_B   on Condition
+1>Inner:-
+2>left:-return all recors from left table if match is availbe form right table ,if not then NULL 
+3>right:-
+4>FULL:-
+4>Cross:-cartesian product
+
+
+-----------------------------Some HR and MR questions-----------------------------
+
+
+
+
+
+-----------------------------Data Structure And Algorithms-------------------------
+
+----Sorting---
+1>Quick Sort:-
+2>Merge Sort:-
+3>Insertion Sort:-
+4>selection Sort:-
+
+
+
+
+
+
+ 
+
+
+
+
+                
+     

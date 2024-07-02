@@ -1,0 +1,14 @@
+Java: object oriented programming language
+Uses :andorid ,AI,web dev,Cloud applications
+
+Advamced topic of Java: object oriented programming language and exceptinal handling
+
+ public class JavaClass{
+     public static void main(String args[]){
+          System.out.println("hello world");
+      }
+ }
+
+// Steps to Implement Java Program
+1>Creating Java Program
+2>
