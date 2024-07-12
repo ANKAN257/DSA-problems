@@ -4,8 +4,39 @@ Description -:
 
 tech stack that i used:- React js ,Node js,tailwind for css
 
+-------steps-------
+1>--register:-A)contestant B)Organiser
+  --UserName,
+  --Email
+  --password
+  --accountType
+2>--LogIn:-After Login ,Organiser get auth email 
+    --After login directed to profile page
+3>--Forget Password
+   --userName
+   --email Address
+   ---now get email like to set password 
+4>--Home Page
+     --Basically what are the contest is going on or previous contest
+    
+  --ProblemSet
+    --organiser can set the problems  into the contest 
+    -- also can add tag or other authers
+    --
+  --Contestant
 
+  --Settings
+     --in Settings part ,(contestant setting)
+     --there are following list of levels :-
+        1.username,email,phoneNo ,name,dob,department cgpa,and some social media profile 
+        2.github profile
 
+     --in setting part(organiser part)
+      --username,company name,work location,cgpa cuttoff,jd ,   
+        
+5>Search 
+
+6>LogOut
 
 
 
@@ -231,7 +262,62 @@ Joins:-combine rows from two or more tables based on related cols bt them
 4>Cross:-cartesian product
 
 
+---sql Language---
+ 1>DDL-data definition Lang:-cmd that are used to define table function views 
+   --Create
+   --Alter -modified the stucture of  of table, rename table,rename column ,col datatype,add new table ,remove constrain  ||eg. Alter Table tablename
+   --drop -remove database object form database ||eg. drop table tablename ,drop function functionName
+   --truncate
+
+--constrain--give some limitations to columns or attribute
+           -maintain data integrity among table
+  --check :-         eg.   ,Age INT check(Age<30)
+  --Not NULL- null not required
+  --unique :- null val can be req
+  --primary key:-combination of not null and unique 
+  --FK:-parent child relationship
+
+  constrain xyzName primary key (rollNo)
+  ,constrain xyz foreign key (rollNo) references collage(rollNo)
+
+
+ 2>DML:-load ,modified,remove data from database
+     --Insert:-load the data into table ,eg .insert into tableName values(),(),(),()
+     --Update:- modify the data in the table ,eg . update tablename set col1="newval" where col2="val
+     --delete:- delete the data from the table ,eg . delete from tableName  ,delete from tableName where col1="newval" 
+
+
+
 -----------------------------Some HR and MR questions-----------------------------
+1>Tell me about yourself
+Ans:-
+ ---Name and eduction qualification
+ ---experience and achivement
+ my Name Ankan kumar and persuing btech from nit jalandhar ,in IT 
+ during my acadimc journing ,i focused on 
+
+
+2>WeakNess and Strength
+weakness:-                            strength:-
+    --Introvert                        --flexible to learn new thing
+    --competative                      --focused
+    --go in depth                      --creative
+
+3>what do you know about tcs ?
+ --it is one of the top MNC serving across the world 
+ --more than 5lack +employeses 
+ --working in analtical ,automation,AI ,blockchain
+
+4>why do you join TCS
+ --it is leading technology
+ --ocean of endless learning 
+ --work life balance
+ --Job security
+
+5>where do you see yourself in 5 years
+--contrube 
+
+
 
 
 
@@ -244,6 +330,8 @@ Joins:-combine rows from two or more tables based on related cols bt them
 2>Merge Sort:-
 3>Insertion Sort:-
 4>selection Sort:-
+5>heap sort
+6>bubble sort
 
 
 

@@ -3,7 +3,7 @@ using namespace std;
 
 class Parent {
 public:
-   virtual void funA() {
+    void funA() {
         print_fun();
     }
   virtual  void print_fun() {
@@ -18,6 +18,8 @@ int x=20;
         cout << "child class " << endl;
     }
 };
+//apti type ka adrss rkh skta
+ class a *b=new a()
 
 int main() {
     Parent p;
