@@ -262,30 +262,6 @@ Joins:-combine rows from two or more tables based on related cols bt them
 4>Cross:-cartesian product
 
 
----sql Language---
- 1>DDL-data definition Lang:-cmd that are used to define table function views 
-   --Create
-   --Alter -modified the stucture of  of table, rename table,rename column ,col datatype,add new table ,remove constrain  ||eg. Alter Table tablename
-   --drop -remove database object form database ||eg. drop table tablename ,drop function functionName
-   --truncate
-
---constrain--give some limitations to columns or attribute
-           -maintain data integrity among table
-  --check :-         eg.   ,Age INT check(Age<30)
-  --Not NULL- null not required
-  --unique :- null val can be req
-  --primary key:-combination of not null and unique 
-  --FK:-parent child relationship
-
-  constrain xyzName primary key (rollNo)
-  ,constrain xyz foreign key (rollNo) references collage(rollNo)
-
-
- 2>DML:-load ,modified,remove data from database
-     --Insert:-load the data into table ,eg .insert into tableName values(),(),(),()
-     --Update:- modify the data in the table ,eg . update tablename set col1="newval" where col2="val
-     --delete:- delete the data from the table ,eg . delete from tableName  ,delete from tableName where col1="newval" 
-
 
 
 -----------------------------Some HR and MR questions-----------------------------
@@ -315,7 +291,7 @@ weakness:-                            strength:-
  --Job security
 
 5>where do you see yourself in 5 years
---contrube 
+--contributing  skils into good project and leading or managing the giding fresher and share my knowledge among them 
 
 
 
