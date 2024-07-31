@@ -1,0 +1,1 @@
+{"name":"Local: balance_paranthesis","url":"d:\\OnlyDSA\\stack_&_queue\\balance_paranthesis.cpp","tests":[{"id":1721237364972,"input":"(()){}[]","output":"balance parenthesis"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OnlyDSA\\stack_&_queue\\balance_paranthesis.cpp","group":"local","local":true}

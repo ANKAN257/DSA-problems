@@ -23,6 +23,28 @@
      --Update:- modify the data in the table ,eg . update tablename set col1="newval" where col2="val
      --delete:- delete the data from the table ,eg . delete from tableName  ,delete from tableName where col1="newval" 
 
-//add new column in tabe
-ALTER TABLE employees add  gender VARCHAR(20)
+-----------------------------ALTER cmd------------------------
+---**add new column in tabe
+--------ALTER Table employees add  gender VARCHAR(20)
 
+---**MODIFY/ALTER – To change the data type of an existing column
+--------Alter Table employees modify column colomName datatype
+
+---**DROP – To delete an existing column from the table
+--------Alter Table employees drop column columnName    
+
+---**RENAME COLUMN – To rename an existing column   
+
+
+
+
+
+//fill the data into gender  column 
+--------update tablename 
+          set gender=case
+            when id=1 then "male"
+            when id%3=0 then "female"
+            else 'other'
+          end;
+      update tablename
+       set    
