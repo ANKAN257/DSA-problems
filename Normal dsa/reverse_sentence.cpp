@@ -2,7 +2,8 @@
 using namespace std;
 int main(){
    
-    string strSen="i am unplaced student";
+    string strSen="ram amaa";
+    cin>>strSen;
     int n=strSen.size();
    stack<string>st;
 
@@ -20,7 +21,7 @@ st.push(str);
 
    while(!st.empty()){
        string temp=st.top();
-       cout<<temp<<" "<<endl;
+       cout<<temp<<" ";
        st.pop();
    }
 
